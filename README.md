@@ -1,4 +1,6 @@
 # Videofy
+![Alt text](/videofy.png?raw=true)
+</br>
 A tool that takes an image-based content article and automatically generates a motion-video out of it. 
 
 ### Table of Contents
