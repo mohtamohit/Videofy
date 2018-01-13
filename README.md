@@ -2,13 +2,13 @@
 A tool that takes an image-based content article and automatically generates a motion-video out of it. 
 
 ### Table of Contents
-  - [Description](#Description)
-  - [Salient Features](#Features)
-  - [Technologies used](#Tech)
-  - [How to use Videofy?](#How-to-use-Videofy?)
-  - [How it works?](#How-it-works?)
-  - [Contributors](#Contributors)
-  - [Future Work](#Future-Work)
+  - [Description](https://github.com/mohtamohit/Videofy/blob/master/README.md#description)
+  - [Salient Features](https://github.com/mohtamohit/Videofy/blob/master/README.md#salient-features)
+  - [Technologies used](https://github.com/mohtamohit/Videofy/blob/master/README.md#tech)
+  - [How to use Videofy?](https://github.com/mohtamohit/Videofy/blob/master/README.md#how-to-use-videofy)
+  - [How it works?](https://github.com/mohtamohit/Videofy/blob/master/README.md#how-it-works)
+  - [Contributors](https://github.com/mohtamohit/Videofy/blob/master/README.md#contributors)
+  - [Future Work](https://github.com/mohtamohit/Videofy/blob/master/README.md#future-work)
 
 ### Description
 The online world is brimmed with an enormous number of content and for a non-traditional reader, watching videos is always an easy escape when he or she is in the midst of tons of text up and down. In fact, more and more marketers are seeking easier ways of publishing there content as a video file rather than the long boring texts.
