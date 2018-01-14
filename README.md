@@ -9,7 +9,7 @@ A tool that takes an image-based content article and automatically generates a m
   - [Technologies used](https://github.com/mohtamohit/Videofy/blob/master/README.md#tech)
   - [How to use Videofy?](https://github.com/mohtamohit/Videofy/blob/master/README.md#how-to-use-videofy)
   - [How it works?](https://github.com/mohtamohit/Videofy/blob/master/README.md#how-it-works)
-  - [How to build from Source?](#)
+  - [How to build from Source?](https://github.com/mohtamohit/Videofy#how-to-build-from-source)
   - [Contributors](https://github.com/mohtamohit/Videofy/blob/master/README.md#contributors)
   - [Future Work](https://github.com/mohtamohit/Videofy/blob/master/README.md#future-work)
 
