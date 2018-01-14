@@ -26,7 +26,7 @@ But, making a video is a far more tedious job than writing a blog and so most of
 - LexRank() to measure the importance of sentences in the graph by considering its relative importance to its neighboring sentences.
 - Prepares the complete video for the article with proper summary
 - A very handy web app already to serve you
-- A chrome/chromium plugin(extension) "Videofy_Chrome_extension.zip"for https://www.wittyfeed.com/story to instantly open the video editing tool Videofy
+- A chrome/chromium plugin(extension) *"Videofy_Chrome_extension.zip"* for https://www.wittyfeed.com/story to instantly open the video editing tool Videofy
 - Implemented sentimental analysis based on nltk library, python. It determines the mood of the person writing the article. Moreover, the motion video supports the audio files that depict the mood of the person 
 
 
@@ -82,6 +82,6 @@ We use various specialized techniques in order to achieve our objective. And, he
 
 ### Future-Work
 - We already have the website live on our local server.
-- Browser extenstions can be made for this tool very easily. This way, the users who have it installed and are browsing some articles, can simply click on the Videofy button (which will be inserted on the webpage using Javascript at client side) and can simply see a video for the very same article.
+- We already have a browser extention made for this.
 - An android and iOS client for the same.
 
