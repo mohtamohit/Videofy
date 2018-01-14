@@ -51,7 +51,7 @@ Videofy uses a number of open source projects to work properly:
 * [socket] - For client-server communication
 * [urllib-python] - For requesting URLs
 * [beautifulsoup-python] - For scraping the web
-* [sumpy-python] - For text summarisation
+* [sumy-python] - For text summarisation
 * [php, materialize.css, html5] - For designing web page
 
 ### How-it-works?
