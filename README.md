@@ -9,6 +9,7 @@ A tool that takes an image-based content article and automatically generates a m
   - [Technologies used](https://github.com/mohtamohit/Videofy/blob/master/README.md#tech)
   - [How to use Videofy?](https://github.com/mohtamohit/Videofy/blob/master/README.md#how-to-use-videofy)
   - [How it works?](https://github.com/mohtamohit/Videofy/blob/master/README.md#how-it-works)
+  - [How to build from Source?](#)
   - [Contributors](https://github.com/mohtamohit/Videofy/blob/master/README.md#contributors)
   - [Future Work](https://github.com/mohtamohit/Videofy/blob/master/README.md#future-work)
 
@@ -63,6 +64,15 @@ We use various specialized techniques in order to achieve our objective. And, he
   - A video without an appropriate music in the background is like a musician without his instrument. This becomes a [sentiment-analysis](http://text-processing.com/demo/sentiment/) problem. We used nltk package of python for this and got the mood of the article. With the mood of the article, we can make a relevant music-choice from our database.
   - After music and caption, we had to sync everything to render the final video. So, we used [moviepy](https://github.com/Zulko/moviepy) library of python to bring all the elements of the video together alongwith beautiful animations and other visual effects.
   - Tadaaa, the video will be ready for consumption.
+
+### How to build from source?
+1. Extract the zip file and paste witty folder in htdocs.
+2. Start Apache Server.
+3. In wity folder, run py_server.py in Python.
+4. Now open browser and visit localhost/witty/index.php
+5. Put the link of the article that you want to videofy into the link box and hit enter.
+6. Your video will be ready in few seconds.
+7. If you want to edit, then you can change frame text of each frame, given on right of each page.
 
 ### Contributors
   - [Ankit Gaur](https://github.com/ankit-gaur)
