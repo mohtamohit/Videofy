@@ -25,12 +25,21 @@ But, making a video is a far more tedious job than writing a blog and so most of
 - LexRank() to measure the importance of sentences in the graph by considering its relative importance to its neighboring sentences.
 - Prepares the complete video for the article with proper summary
 - A very handy web app already to serve you
+- A chrome/chromium plugin(extension) "Videofy_Chrome_extension.zip"for https://www.wittyfeed.com/story to instantly open the video editing tool Videofy
+- Implemented sentimental analysis based on nltk library, python. It determines the mood of the person writing the article. Moreover, the motion video supports the audio files that depict the mood of the person 
+
 
 ### How-to-use-Videofy?
 It is as simple as searching on google and more easier than reading an article on Wittyfeed. Well, so if you ever feel a bit tired but you still want to read the viral witty feeds on Wittyfeed.com. You have Videofy to help you out. You just  need to follow these simple steps : 
   - Copy the URL of the article you want to make a video of to the the Videofy website ( we aren't live yet, url for our website will be updated here soon). Till then, until the time we are here in the wittyfeed office (before the end of this hackathon), you can view it at http://192.168.2.12/witty/
   - Simply press enter after pasting the URL there.
   - The video will be rendered in the frame on that page in some time.
+  - DIRECTIONS TO USE CHROME-EXTENSION
+    To install from sources:
+    Go to chrome://extensions/.
+    Click Load unpacked extension.
+    Select the extension directory.
+    Once above steps are performed, just go to https://www.wittyfeed.com/story and press the right most button on the screen.
 
 Really simple, isn't it? :)
 
