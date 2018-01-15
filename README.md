@@ -31,8 +31,10 @@ But, making a video is a far more tedious job than writing a blog and so most of
 
 
 ### How-to-use-Videofy?
+See [build from source](https://github.com/mohtamohit/Videofy#how-to-build-from-source) to test this now.
+
 It is as simple as searching on google and more easier than reading an article on Wittyfeed. Well, so if you ever feel a bit tired but you still want to read the viral witty feeds on Wittyfeed.com. You have Videofy to help you out. You just  need to follow these simple steps : 
-  - Copy the URL of the article you want to make a video of to the the Videofy website ( we aren't live yet, url for our website will be updated here soon). Till then, until the time we are here in the wittyfeed office (before the end of this hackathon), you can view it at http://192.168.2.12/witty/
+  - Copy the URL of the article you want to make a video of to the the Videofy website ( we aren't live yet, url for our website will be updated here soon). Till then, until the time we are here in the wittyfeed office (before the end of this hackathon), you can view it at <link deleted because local server is off now>. It was up just for the hackathon. Now you need tp (build from source)[https://github.com/mohtamohit/Videofy#how-to-build-from-source] to test this.
   - Simply press enter after pasting the URL there.
   - The video will be rendered in the frame on that page in some time.
   - DIRECTIONS TO USE CHROME-EXTENSION
