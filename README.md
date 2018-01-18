@@ -86,4 +86,5 @@ We use various specialized techniques in order to achieve our objective. And, he
 - We already have the website live on our local server.
 - We already have a browser extention made for this.
 - An android and iOS client for the same.
+- Apply image processing to find the base colour of the image and then apply the contrast colour to the text.
 
