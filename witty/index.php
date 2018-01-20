@@ -10,10 +10,9 @@ function connect($data){
 
   socket_connect ($socket1 , $host,$port ) ;
 
-  socket_write($socket1, $output, strlen ($output)) or die("Python Server is not runniing....\nPlease start pythonn server first...");
+  socket_write($socket1, $output, strlen ($output)) or die("Python Server is not running....\nPlease start python server first...");
 
   socket_close($socket1);
-  // echo '<script type="text/javascript">location.href = "inde.php";</script>';
 }
 
 function imgshow($path,$id){
@@ -28,18 +27,11 @@ function textshow($text,$id){
 }
 
 function edit_box(){
-      // Execute the python script with the JSON data
-      $result = file_get_contents("data.json");
-      //print($result);
-     // Decode the result
+
+    $result = file_get_contents("data.json");
 
     $resultData = json_decode($result, true);
-    // This will contain: array('status' => 'Yes!')
-    // var_dump($resultData);
-    // imgshow($resultData[1][1],0);
-    // echo $resultData[1][1];
       for($i=2;$i<sizeof($resultData);$i++){
-        // echo $resultData[$i][1]+'<br>';
         if($resultData[$i][0]=='img'){
           imgshow($resultData[$i],$i);
         }
@@ -61,9 +53,6 @@ function transcript(){
   {
     
     connect("sdf");
-    // echo '<script language="javascript">';
-    // // echo 'alert("Wait for 10 seconds....")';
-    // echo '</script>';
       $result = file_get_contents("data.json");
       print($result);
      // Decode the result
