@@ -10,7 +10,7 @@ function connect($data){
 
   socket_connect ($socket1 , $host,$port ) ;
 
-  socket_write($socket1, $output, strlen ($output)) or die("Could not write output\n");
+  socket_write($socket1, $output, strlen ($output)) or die("Python Server is not runniing....\nPlease start pythonn server first...");
 
   socket_close($socket1);
   // echo '<script type="text/javascript">location.href = "inde.php";</script>';
@@ -232,7 +232,7 @@ function makeNormal() {
       border: 1px solid #616161;
       border-radius: 0;
       outline: none;
-      height: 4rem;
+      height: 5rem;
       width: 100%;
       font-size: 1rem;
       color: grey;
