@@ -28,7 +28,7 @@ function textshow($text,$id){
 
 function edit_box(){
 
-    $result = file_get_contents("data.json");
+    $result = file_get_contents("assets/data.json");
 
     $resultData = json_decode($result, true);
       for($i=2;$i<sizeof($resultData);$i++){
@@ -42,18 +42,18 @@ function edit_box(){
       }
 }
 function transcript(){
-  echo readfile("f1.txt");
+  echo readfile("assets/f1.txt");
 }
 ?>
 
 <?php
-    $result = file_get_contents("data.json");
+    $result = file_get_contents("assets/data.json");
     $resultData = json_decode($result, true);
   if(isset($_POST['edit']))  
   {
     
     connect("sdf");
-      $result = file_get_contents("data.json");
+      $result = file_get_contents("assets/data.json");
       print($result);
      // Decode the result
 
@@ -69,7 +69,7 @@ function transcript(){
 
       }
       echo $resultData;
-      $fp = fopen('data.json', 'w');
+      $fp = fopen('assets/data.json', 'w');
       fwrite($fp, json_encode($resultData));
       fclose($fp);
       echo '<script type="text/javascript">location.href = "redirect.php";</script>';
@@ -78,7 +78,7 @@ function transcript(){
       $url = $_POST["url"];
       $resultData =array("first",$url);
       // $resultData = $url;
-      $fp = fopen('data.json', 'w');
+      $fp = fopen('assets/data.json', 'w');
       fwrite($fp, json_encode($resultData));
       fclose($fp);
       connect("123");
