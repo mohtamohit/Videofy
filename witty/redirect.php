@@ -24,7 +24,7 @@
 
 <body>
 
-<center><img src="logo.png" class="logo" ></center>
+<center><img src="assets/logo.png" class="logo" ></center>
 <div id="div1" class="fa"></div>
 <!-- <p id="div2">Wait for few seconds..<br></p> -->
 <center><p>Wait for few seconds.</p></center>
@@ -56,7 +56,7 @@ function status() {
       }
     }
   };
-  xhttp.open("GET", "con.txt", true);
+  xhttp.open("GET", "assets/con.txt", true);
   xhttp.send();   
 }
 setInterval(status,1000);

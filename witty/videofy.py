@@ -32,13 +32,13 @@ def download_web_image(url, i):
     urllib.request.urlretrieve(url,full_name)
 
 def get_image_count():
-    f = open("image_count.txt",'r')
+    f = open("assets/image_count.txt",'r')
     count = int(f.read())
     f.close()
     return count
 
 def save_count(count):
-    f = open("image_count.txt",'w')
+    f = open("assets/image_count.txt",'w')
     f.write(str(count))
     f.close()
 
@@ -108,7 +108,7 @@ http = urllib3.PoolManager()
 #Input url
 # url = 'https://www.wittyfeed.com/story/61677/benefits-of-doing-namaz'
 
-f = open("data.json","r")
+f = open("assets/data.json","r")
 data = f.read()
 url = ''
 
@@ -125,7 +125,7 @@ def get_data(url):
         response = http.request('GET', url)
         soup = BeautifulSoup(response.data, "lxml")
 
-        f1 = open("f1.txt","w+")
+        f1 = open("assets/f1.txt","w+")
 
         #Implementing BeautifulSoup
         title = soup.title.text
@@ -142,17 +142,17 @@ def get_data(url):
                 numImages+=1
 
         for i in range(len(para)):
-            f1 = open("f1.txt", "w+")
+            f1 = open("assets/f1.txt", "w+")
             f1.write(para[i].text + "\n")
             f1.close()
-            parser = PlaintextParser.from_file("f1.txt", Tokenizer("english"))
+            parser = PlaintextParser.from_file("assets/f1.txt", Tokenizer("english"))
             summarizer = LexRankSummarizer()
             summary = summarizer(parser.document, 2)
             for sentence in summary:
                 if(len(str(sentence)) > 30):
                     temp += str(sentence) + "\n\n"
 
-        f1 = open("f1.txt", "w+")
+        f1 = open("assets/f1.txt", "w+")
         f1.write(temp)
         f1.close()
         txt_list =  (temp.split("\n"))
@@ -175,7 +175,7 @@ sentence = ""
 line = ""
 
 
-f = open("data.json","r")
+f = open("assets/data.json","r")
 data = f.read()
 jsonObj = json.loads(data)
 # print(jsonObj['1'][0])
@@ -196,7 +196,7 @@ if(jsonObj[0]=='first'):
         sentence = sentence + line 
         justifiedList.append(sentence)
         sentence = ""
-    with open('data.json', 'w') as outfile:
+    with open('assets/data.json', 'w') as outfile:
         json.dump(justifiedList, outfile)
 else:
     for i in range(0,len(jsonObj)):
@@ -225,7 +225,7 @@ for i in range(1,numImages):
     clp = ImageClip("images/"+str(i)+".jpg").resize(width = w, height = h).set_pos(('center','center')).fl_image(lambda pic: (0.6*pic).astype('int16'))
     clip_img.append(clp)
 
-witty = ImageClip("wittywall.jpeg").resize(width = w, height = h).set_pos(('center','center'))
+witty = ImageClip("assets/wittywall.jpeg").resize(width = w, height = h).set_pos(('center','center'))
 
 cmp_list = []
 cmp_list.append(witty)
@@ -233,7 +233,7 @@ time = 2
 sent_index = 0 
 
 for i in range(0, numImages-1):
-    cmp_list.append(ImageClip("black.jpeg").resize(width = w,height = h).set_start(time))
+    cmp_list.append(ImageClip("assets/black.jpeg").resize(width = w,height = h).set_start(time))
     cmp_list.append(clip_img[i].set_start(time))
     for k in range(avgSentence):
         if(totalSentence - i*avgSentence >= (numImages-i-1)*(avgSentence-1)):

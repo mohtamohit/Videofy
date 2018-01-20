@@ -16,7 +16,7 @@ def creating_connection():
 	s.listen(1)
 	conn,addr =s.accept()
 	print (conn,addr)
-	
+
 	data=conn.recv(100000)
 	data=data.decode("utf-8")
 	s.close
@@ -24,7 +24,7 @@ def creating_connection():
 
 #connect for rediret when video rendering completed
 def conn_for_redirect(txt):
-    f = open("con.txt",'w')
+    f = open("assets/con.txt",'w')
     f.write(txt)
     f.close()
 
@@ -36,7 +36,7 @@ def creating_video():
 		os.system('sudo python3 videofy.py')
 		print("vedio rendring has been completed!")
 	except:
-		print("Wrong URL or problem in *vediofy.py*")
+		print("Wrong URL or problem in *vediofy.py* ")
 
 	conn_for_redirect("1")
 while 1:
