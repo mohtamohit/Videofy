@@ -1,3 +1,5 @@
+### This project received the first prize in WittyHacks 1.0, organized by WittyFeed! This was all initiated and completed during a hackathon.
+
 # Videofy
 ![Alt text](assets/logo.png)
 </br>
