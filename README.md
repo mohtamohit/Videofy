@@ -83,5 +83,9 @@ We use various specialized techniques in order to achieve our objective. And, he
 ### Future-Work
 - We already have the website live on our local server.
 - Browser extenstions can be made for this tool very easily. This way, the users who have it installed and are browsing some articles, can simply click on the Videofy button (which will be inserted on the webpage using Javascript at client side) and can simply see a video for the very same article.
-- An android and iOS client for the same.
+- An android and iOS client for the sam
+
+## Demo
+https://user-images.githubusercontent.com/20180313/179451124-68625f74-4b74-4cf5-ad49-93429d75de81.mp4
+
 
